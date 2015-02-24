@@ -1,0 +1,13 @@
+{
+  "name": "ngConfExtendBR",
+  "version": "1.0.0",
+  "authors": [
+    "Thulio Philipe | thulioph.com"
+  ],
+  "main": "dist/js/libs.min.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.0"
+  }
+}
