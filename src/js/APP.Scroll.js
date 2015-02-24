@@ -15,9 +15,11 @@ APP.Scroll = {
     that = this;
 
     // nav links
-    $('.nav-list').on('click', 'a', function(event) {
+    $('.scroll').on('click', function(event) {
       event.preventDefault();
       target = $( $(this).attr('href') );
+
+      console.log(target);
 
       that.smoothScroll(target, 85);
 
