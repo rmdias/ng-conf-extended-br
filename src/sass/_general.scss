@@ -413,6 +413,7 @@ body {
 
 .jobs {
   @extend .speaker;
+  min-height: 350px;
 
   .section-subtitle {
     margin-top: -10px;
