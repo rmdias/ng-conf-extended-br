@@ -137,6 +137,13 @@ body {
       border-bottom: 3px solid $active;
     }
   }
+
+  &.jobs-active {
+    a {
+      color: $bg-dark;
+      border-bottom: 3px solid $bg-dark;
+    }
+  }
 }
 
 .nav-link {
@@ -398,6 +405,45 @@ body {
     line-height: 20px;
   }
 }
+
+
+//
+// Jobs
+//
+
+.jobs {
+  @extend .speaker;
+
+  .section-subtitle {
+    margin-top: -10px;
+    margin-bottom: 60px;
+  }
+}
+
+.main-jobs { background-color: #fafafa; }
+
+.jobs-image {
+  @extend .speaker-image;
+}
+
+.jobs-info {
+  @extend .speaker-info;
+  color: $bg-dark;
+
+  p { clear: right; }
+}
+
+.jobs-apply {
+  color: $link-secondary;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: right;
+  font-size: $fs-small;
+  font-family: $ff-description;
+  float: right;
+  margin-top: -50px;
+}
+
 
 
 //
