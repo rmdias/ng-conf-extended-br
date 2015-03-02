@@ -7,6 +7,7 @@ APP.Scroll = {
   setUp: function(){
     this.getClick();
     this.getPosition();
+    // this.activeScroll();
   },
 
   getClick: function() {
@@ -41,5 +42,28 @@ APP.Scroll = {
         $('#header-primary').removeClass('js-header-fixed');
       }
     });
+  },
+
+  markerSection: function(event) {
+    var that = this;
+    var scrollPos = $(document).scrollTop();
+
+    $('.scroll').each(function() {
+      var currLink = $(this);
+      var refElement = $(currLink.attr('href'));
+
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        $('.scroll').removeClass('js-nav-active');
+        currLink.addClass('js-nav-active');
+      } else {
+        currLink.removeClass('js-nav-active');
+      }
+    });
+  },
+
+  activeScroll: function() {
+    var that = this;
+
+    $(document).on('scroll', that.markerSection);
   }
 }
