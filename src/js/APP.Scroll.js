@@ -6,7 +6,7 @@ var APP = APP || {};
 APP.Scroll = {
   setUp: function(){
     this.getClick();
-    // this.getPosition();
+    this.getPosition();
   },
 
   getClick: function() {
@@ -18,8 +18,6 @@ APP.Scroll = {
     $('.scroll').on('click', function(event) {
       event.preventDefault();
       target = $( $(this).attr('href') );
-
-      console.log(target);
 
       that.smoothScroll(target, 190);
 
@@ -37,10 +35,10 @@ APP.Scroll = {
 
   getPosition: function() {
     $(window).on('scroll', function() {
-      if ($(document).scrollTop() >= 7) {
-        $('#header-primary').addClass('js-nav-active');
-      } else if ($(document).scrollTop() <= 67) {
-        $('#header-primary').removeClass('js-nav-active');
+      if ($(document).scrollTop() >= 35) {
+        $('#header-primary').addClass('js-header-fixed');
+      } else if ($(document).scrollTop() <= 117) {
+        $('#header-primary').removeClass('js-header-fixed');
       }
     });
   }
