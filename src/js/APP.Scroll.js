@@ -19,7 +19,7 @@ APP.Scroll = {
       event.preventDefault();
       target = $( $(this).attr('href') );
 
-      that.smoothScroll(target, 190);
+      that.smoothScroll(target, 100);
 
       // adds and removes active class
       $('.nav-item').removeClass('js-nav-active');
