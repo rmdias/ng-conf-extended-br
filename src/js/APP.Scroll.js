@@ -6,7 +6,7 @@ var APP = APP || {};
 APP.Scroll = {
   setUp: function(){
     this.getClick();
-    this.getPosition();
+    // this.getPosition();
   },
 
   getClick: function() {
@@ -21,7 +21,7 @@ APP.Scroll = {
 
       console.log(target);
 
-      that.smoothScroll(target, 85);
+      that.smoothScroll(target, 190);
 
       // adds and removes active class
       $('.nav-item').removeClass('js-nav-active');
@@ -37,10 +37,10 @@ APP.Scroll = {
 
   getPosition: function() {
     $(window).on('scroll', function() {
-      if ($(document).scrollTop() >= 345) {
-        $('#nav-primary').addClass('js-nav-active');
-      } else if ($(document).scrollTop() <= 405) {
-        $('#nav-primary').removeClass('js-nav-active');
+      if ($(document).scrollTop() >= 7) {
+        $('#header-primary').addClass('js-nav-active');
+      } else if ($(document).scrollTop() <= 67) {
+        $('#header-primary').removeClass('js-nav-active');
       }
     });
   }

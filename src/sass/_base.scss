@@ -111,7 +111,7 @@ $bg-more-dark:                $black-dark;
 //
 
 // box-shadow
-@mixin bsd($x, $y, $blur, $color) {
+@mixin bsd($x, $y, $color) {
   -webkit-box-shadow: $x $y $color;
      -moz-box-shadow: $x $y $color;
       -ms-box-shadow: $x $y $color;
