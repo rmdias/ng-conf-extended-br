@@ -19,9 +19,7 @@ APP.Scroll = {
       event.preventDefault();
       target = $( $(this).attr('href') );
 
-      console.log(target);
-
-      that.smoothScroll(target, 85);
+      that.smoothScroll(target, 100);
 
       // adds and removes active class
       $('.nav-item').removeClass('js-nav-active');
@@ -37,10 +35,10 @@ APP.Scroll = {
 
   getPosition: function() {
     $(window).on('scroll', function() {
-      if ($(document).scrollTop() >= 345) {
-        $('#nav-primary').addClass('js-nav-active');
-      } else if ($(document).scrollTop() <= 405) {
-        $('#nav-primary').removeClass('js-nav-active');
+      if ($(document).scrollTop() >= 35) {
+        $('#header-primary').addClass('js-header-fixed');
+      } else if ($(document).scrollTop() <= 117) {
+        $('#header-primary').removeClass('js-header-fixed');
       }
     });
   }

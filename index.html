@@ -50,334 +50,366 @@
   <link type="text/plain" rel="author" href="http://ng-conf-extend.com.br" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="dist/css/style.min.css">
+<link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
 <body>
-  <header class="header-primary">
-    <h1 class="logo"> NG-Conf Extend BR  </h1>
+  <header id="header-primary" class="header-primary">
+    <div class="content">
+      <h1 class="logo">
+        <a href="#" title="NG-Conf Extend BR">NG-Conf Extend BR</a>
+      </h1>
 
-    <nav id="nav-primary" class="nav-primary">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#location" class="nav-link scroll" title="Location">Location</a>
-        </li>
+      <button class="btn buy-ticket">Buy Tickets</button>
 
-        <li class="nav-item">
-          <a href="#event" class="nav-link scroll" title="Event">Event</a>
-        </li>
+      <nav id="nav-primary" class="nav-primary">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#location" class="nav-link scroll" title="Location">Location</a>
+          </li>
 
-        <li class="nav-item">
-          <a href="#speakers" class="nav-link scroll" title="Speakers">Speakers</a>
-        </li>
+          <li class="nav-item">
+            <a href="#event" class="nav-link scroll" title="Event">Event</a>
+          </li>
 
-        <li class="nav-item">
-          <a href="#schedule" class="nav-link scroll" title="Schedule">Schedule</a>
-        </li>
+          <li class="nav-item">
+            <a href="#speakers" class="nav-link scroll" title="Speakers">Speakers</a>
+          </li>
 
-        <li class="nav-item">
-          <a href="#about" class="nav-link scroll" title="About">About</a>
-        </li>
+          <li class="nav-item">
+            <a href="#schedule" class="nav-link scroll" title="Schedule">Schedule</a>
+          </li>
 
-        <li class="nav-item">
-          <a href="/jobs" class="nav-link" title="Jobs">Jobs</a>
-        </li>
-      </ul>
-    </nav>
+          <li class="nav-item">
+            <a href="#about" class="nav-link scroll" title="About">About</a>
+          </li>
 
-    <button class="btn buy-ticket">Inscreva-se</button>
+          <li class="nav-item">
+            <a href="/jobs" class="nav-link" title="Jobs">Jobs</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="main">
     <section id="location" class="section location">
-      <ul class="location-list">
-        <li class="location-item">
-          <a href="#" class="location-link">
-            <h4 class="location-title">Title Here</h4>
+      <div class="content">
+        <ul class="location-list">
+          <li class="location-item">
+            <h4 class="location-title">São Paulo</h4>
             <figure class="location-image">
-              <img src="" alt="">
-              <figcaption class="location-info"></figcaption>
+              <img src="src/images/location/sp.jpg" alt="São Paulo">
+              <figcaption class="location-info">
+                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
+              </figcaption>
             </figure>
-          </a>
-        </li>
+          </li>
 
-        <li class="location-item">
-          <a href="#" class="location-link">
-            <h4 class="location-title">Title Here</h4>
+          <li class="location-item live">
+            <h4 class="location-title">Live stream from San Francisco</h4>
             <figure class="location-image">
-              <img src="" alt="">
-              <figcaption class="location-info"></figcaption>
+              <img src="src/images/location/sf.jpg" alt="San Fracisco">
+              <figcaption class="location-info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </figcaption>
             </figure>
-          </a>
-        </li>
+          </li>
 
-        <li class="location-item">
-          <a href="#" class="location-link">
-            <h4 class="location-title">Title Here</h4>
+          <li class="location-item">
+            <h4 class="location-title">Belo Horizonte</h4>
             <figure class="location-image">
-              <img src="" alt="">
-              <figcaption class="location-info"></figcaption>
+              <img src="src/images/location/bh.jpg" alt="Belo Horizonte">
+              <figcaption class="location-info">
+                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
+              </figcaption>
             </figure>
-          </a>
-        </li>
+          </li>
 
-        <li class="location-item">
-          <a href="#" class="location-link">
-            <h4 class="location-title">Title Here</h4>
+          <li class="location-item">
+            <h4 class="location-title">Brasília</h4>
             <figure class="location-image">
-              <img src="" alt="">
-              <figcaption class="location-info"></figcaption>
+              <img src="src/images/location/br.jpg" alt="Brasília">
+              <figcaption class="location-info">
+                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
+              </figcaption>
             </figure>
-          </a>
-        </li>
+          </li>
 
-        <li class="location-item">
-          <a href="#" class="location-link">
-            <h4 class="location-title">Title Here</h4>
+          <li class="location-item">
+            <h4 class="location-title">Curitiba</h4>
             <figure class="location-image">
-              <img src="" alt="">
-              <figcaption class="location-info"></figcaption>
+              <img src="src/images/location/cwb.jpg" alt="Curitiba">
+              <figcaption class="location-info">
+                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
+              </figcaption>
             </figure>
-          </a>
-        </li>
+          </li>
 
-        <li class="location-item">
-          <a href="#" class="location-link">
-            <h4 class="location-title">Title Here</h4>
+          <li class="location-item">
+            <h4 class="location-title">Florianópolis</h4>
             <figure class="location-image">
-              <img src="" alt="">
-              <figcaption class="location-info"></figcaption>
+              <img src="src/images/location/flo.jpg" alt="Florianópolis">
+              <figcaption class="location-info">
+                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
+              </figcaption>
             </figure>
-          </a>
-        </li>
+          </li>
 
-        <li class="location-item">
-          <a href="#" class="location-link">
-            <h4 class="location-title">Title Here</h4>
+          <li class="location-item">
+            <h4 class="location-title">Porto Alegre</h4>
             <figure class="location-image">
-              <img src="" alt="">
-              <figcaption class="location-info"></figcaption>
+              <img src="src/images/location/poa.jpg" alt="Porto Alegre">
+              <figcaption class="location-info">
+                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
+              </figcaption>
             </figure>
-          </a>
-        </li>
+          </li>
 
-        <li class="location-item">
-          <a href="#" class="location-link">
-            <h4 class="location-title">Title Here</h4>
+          <li class="location-item">
+            <h4 class="location-title">Recife</h4>
             <figure class="location-image">
-              <img src="" alt="">
-              <figcaption class="location-info"></figcaption>
+              <img src="src/images/location/rec.jpg" alt="Recife">
+              <figcaption class="location-info">
+                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
+              </figcaption>
             </figure>
-          </a>
-        </li>
+          </li>
 
-        <li class="location-item">
-          <a href="#" class="location-link">
-            <h4 class="location-title">Title Here</h4>
+          <li class="location-item">
+            <h4 class="location-title">Rio de Janeiro</h4>
             <figure class="location-image">
-              <img src="" alt="">
-              <figcaption class="location-info"></figcaption>
+              <img src="src/images/location/rj.jpg" alt="Rio de Janeiro">
+              <figcaption class="location-info">
+                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
+              </figcaption>
             </figure>
-          </a>
-        </li>
+          </li>
 
-        <li class="location-item">
-          <a href="#" class="location-link">
-            <h4 class="location-title">Title Here</h4>
+          <li class="location-item">
+            <h4 class="location-title">Salvador</h4>
             <figure class="location-image">
-              <img src="" alt="">
-              <figcaption class="location-info"></figcaption>
+              <img src="src/images/location/sal.jpg" alt="Salvador">
+              <figcaption class="location-info">
+                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
+              </figcaption>
             </figure>
-          </a>
-        </li>
+          </li>
 
-        <li class="location-item">
-          <a href="#" class="location-link">
-            <h4 class="location-title">Title Here</h4>
+          <li class="location-item">
+            <h4 class="location-title">Vitória</h4>
             <figure class="location-image">
-              <img src="" alt="">
-              <figcaption class="location-info"></figcaption>
+              <img src="src/images/location/vit.jpg" alt="Vitória">
+              <figcaption class="location-info">
+                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
+              </figcaption>
             </figure>
-          </a>
-        </li>
-
-        <li class="location-item">
-          <a href="#" class="location-link">
-            <h4 class="location-title">Title Here</h4>
-            <figure class="location-image">
-              <img src="" alt="">
-              <figcaption class="location-info"></figcaption>
-            </figure>
-          </a>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="event" class="section event">
-      <aside class="content">
-        <h3 class="section-title">ng-conf it's an event that will teach you</h3>
-      </aside>
+      <div class="content">
+        <h3>ng-conf it's an event that will teach you</h3>
 
-      <aside class="content">
-        <p class="section-description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, voluptatibus. Nesciunt vero voluptas, dignissimos rerum sunt impedit laudantium ea eos cumque a nemo, ducimus iste repellat ipsa culpa minima laborum commodi cum repellendus ex. Tenetur aspernatur, minima dignissimos quam cupiditate totam vitae voluptas ab dicta animi aperiam ad, eaque nulla sint optio. Nesciunt consequuntur nulla voluptatum iste quae ipsa nostrum, earum dolores facere reiciendis illum ipsam quam nam ipsum itaque consectetur alias, ex iusto. Ut doloribus deserunt tempora eos praesentium vitae cum perspiciatis reprehenderit. Neque officiis, officia commodi quis cupiditate, ullam unde repellat, voluptatibus labore aperiam, inventore mollitia culpa! Repellat.
-        </p>
-      </aside>
+        <aside>
+          <p class="section-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+
+          <p class="section-description">
+            Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+          </p>
+        </aside>
+      </div>
     </section>
 
     <section id="speakers" class="section speakers">
-      <h2 class="section-title">The best of the best in Angular™</h2>
-      <h3 class="section-subtitle">Who will be talking in</h3>
+      <div class="content">
+        <h2 class="section-title">The best of the best in Angular™</h2>
+        <h3 class="section-subtitle">Who will be talking in</h3>
 
-      <select id="speakers-state" class="state">
-        <option value="São Paulo">São Paulo</option>
-        <option value="Rio de Janeiro">Rio de Janeiro</option>
-      </select>
+        <select id="speakers-state" class="state select">
+          <option value="São Paulo">São Paulo</option>
+          <option value="San Francisco">San Francisco</option>
+          <option value="Belo Horizonte">Belo Horizonte</option>
+          <option value="Brasília">Brasília</option>
+          <option value="Curitiba">Curitiba</option>
+          <option value="Florianópolis">Florianópolis</option>
+          <option value="Porto Alegre">Porto Alegre</option>
+          <option value="Recife">Recife</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
+          <option value="Salvador">Salvador</option>
+          <option value="Vitória">Vitória</option>
+        </select>
 
-      <ul class="speakers-list">
-        <li class="speakers-item">
-          <figure>
-            <figcaption>Name Here</figcaption>
-          </figure>
-        </li>
-
-        <li class="speakers-item">
-          <figure>
-            <figcaption>Name Here</figcaption>
-          </figure>
-        </li>
-
-        <li class="speakers-item">
-          <figure>
-            <figcaption>Name Here</figcaption>
-          </figure>
-        </li>
-
-        <li class="speakers-item">
-          <figure>
-            <figcaption>Name Here</figcaption>
-          </figure>
-        </li>
-
-        <li class="speakers-item">
-          <figure>
-            <figcaption>Name Here</figcaption>
-          </figure>
-        </li>
-
-        <li class="speakers-item">
-          <figure>
-            <figcaption>Name Here</figcaption>
-          </figure>
-        </li>
-
-        <li class="speakers-item">
-          <figure>
-            <figcaption>Name Here</figcaption>
-          </figure>
-        </li>
-
-        <li class="speakers-item">
-          <figure>
-            <figcaption>Name Here</figcaption>
-          </figure>
-        </li>
-      </ul>
-    </section>
-
-    <section id="schedule" class="section schedule">
-      <h2 class="section-title">Schedule of the ng-conf 2015</h2>
-      <h3 class="section-subtitle">See what will be happenning in </h3>
-
-      <select id="schedule-state" class="state">
-        <option value="São Paulo">São Paulo</option>
-        <option value="Rio de Janeiro">Rio de Janeiro</option>
-      </select>
-
-      <article class="speaker">
-        <figure class="speaker-image">
-          <img src="" alt="">
-        </figure>
-
-        <div class="speaker-info">
-          <h3 class="speaker-talk">Talk Here</h3>
-          <h4 class="speaker-title">My name Here</h4>
-          <p class="speaker-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea impedit alias repellat ipsa? Dignissimos odio repudiandae consectetur, ad, assumenda sed perspiciatis molestiae illo sapiente necessitatibus, deserunt eligendi laudantium dicta facere magnam animi voluptatum? Voluptas numquam vitae culpa excepturi distinctio eius. Laborum nihil cumque quis accusamus rem eveniet perferendis odio voluptates!</p>
-        </div>
-      </article>
-
-      <article class="speaker">
-        <figure class="speaker-image">
-          <img src="" alt="">
-        </figure>
-
-        <div class="speaker-info">
-          <h3 class="speaker-talk">Talk Here</h3>
-          <h4 class="speaker-title">My name Here</h4>
-          <p class="speaker-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea impedit alias repellat ipsa? Dignissimos odio repudiandae consectetur, ad, assumenda sed perspiciatis molestiae illo sapiente necessitatibus, deserunt eligendi laudantium dicta facere magnam animi voluptatum? Voluptas numquam vitae culpa excepturi distinctio eius. Laborum nihil cumque quis accusamus rem eveniet perferendis odio voluptates!</p>
-        </div>
-      </article>
-    </section>
-
-    <section id="about" class="section about">
-      <h2 class="section-title">Brought to you with love from...</h2>
-      <h3 class="section-subtitle">Our sponsors </h3>
-
-      <aside class="sponsors-logo">
-        <figure>
-          <img src="" alt="">
-        </figure>
-
-        <figure>
-          <img src="" alt="">
-        </figure>
-      </aside>
-
-      <aside class="organizers">
-        <ul class="organizers-list">
-          <li class="organizers-item">
+        <ul class="speakers-list">
+          <li class="speakers-item">
             <figure>
-              <img src="" alt="">
+              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
               <figcaption>Name Here</figcaption>
             </figure>
           </li>
 
-          <li class="organizers-item">
+          <li class="speakers-item">
             <figure>
-              <img src="" alt="">
+              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
               <figcaption>Name Here</figcaption>
             </figure>
           </li>
 
-          <li class="organizers-item">
+          <li class="speakers-item">
             <figure>
-              <img src="" alt="">
+              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
               <figcaption>Name Here</figcaption>
             </figure>
           </li>
 
-          <li class="organizers-item">
+          <li class="speakers-item">
             <figure>
-              <img src="" alt="">
+              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
+              <figcaption>Name Here</figcaption>
+            </figure>
+          </li>
+
+          <li class="speakers-item">
+            <figure>
+              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
+              <figcaption>Name Here</figcaption>
+            </figure>
+          </li>
+
+          <li class="speakers-item">
+            <figure>
+              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
+              <figcaption>Name Here</figcaption>
+            </figure>
+          </li>
+
+          <li class="speakers-item">
+            <figure>
+              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
+              <figcaption>Name Here</figcaption>
+            </figure>
+          </li>
+
+          <li class="speakers-item">
+            <figure>
+              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
               <figcaption>Name Here</figcaption>
             </figure>
           </li>
         </ul>
-      </aside>
+      </div>
+    </section>
+
+    <section id="schedule" class="section schedule">
+      <div class="content">
+        <h2 class="section-title">Schedule of the ng-conf 2015</h2>
+        <h3 class="section-subtitle">See what will be happenning in </h3>
+
+        <select id="schedule-state" class="state select">
+          <option value="São Paulo">São Paulo</option>
+          <option value="San Francisco">San Francisco</option>
+          <option value="Belo Horizonte">Belo Horizonte</option>
+          <option value="Brasília">Brasília</option>
+          <option value="Curitiba">Curitiba</option>
+          <option value="Florianópolis">Florianópolis</option>
+          <option value="Porto Alegre">Porto Alegre</option>
+          <option value="Recife">Recife</option>
+          <option value="Rio de Janeiro">Rio de Janeiro</option>
+          <option value="Salvador">Salvador</option>
+          <option value="Vitória">Vitória</option>
+        </select>
+
+        <article class="speaker">
+          <figure class="speaker-image">
+            <img src="http://dummyimage.com/220x210/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+          </figure>
+
+          <div class="speaker-info">
+            <h3>Talk Here</h3>
+            <h4>My name Here</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea impedit alias repellat ipsa? Dignissimos odio repudiandae consectetur, ad, assumenda sed perspiciatis molestiae illo sapiente necessitatibus, deserunt eligendi laudantium dicta facere magnam animi voluptatum? Voluptas numquam vitae culpa excepturi distinctio eius. Laborum nihil cumque quis accusamus rem eveniet perferendis odio voluptates!</p>
+          </div>
+        </article>
+
+        <article class="speaker">
+          <figure class="speaker-image">
+            <img src="http://dummyimage.com/220x210/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+          </figure>
+
+          <div class="speaker-info">
+            <h3>Talk Here</h3>
+            <h4>My name Here</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea impedit alias repellat ipsa? Dignissimos odio repudiandae consectetur, ad, assumenda sed perspiciatis molestiae illo sapiente necessitatibus, deserunt eligendi laudantium dicta facere magnam animi voluptatum? Voluptas numquam vitae culpa excepturi distinctio eius. Laborum nihil cumque quis accusamus rem eveniet perferendis odio voluptates!</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="content">
+        <h2 class="section-title">Brought to you with love from...</h2>
+        <h3 class="section-subtitle">Our sponsors </h3>
+
+        <aside class="sponsors-logo">
+          <figure class="google">
+            <img src="src/images/sponsors/google.png" alt="Google">
+          </figure>
+
+          <figure class="sagenev">
+            <img src="src/images/sponsors/sagenev.png" alt="SagenevTech">
+          </figure>
+        </aside>
+
+        <aside class="organizers">
+          <h3 class="section-subtitle">Organizers</h3>
+          <ul class="organizers-list">
+            <li class="organizers-item speakers-item">
+              <figure>
+                <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
+                <figcaption>Name Here</figcaption>
+              </figure>
+            </li>
+
+            <li class="organizers-item speakers-item">
+              <figure>
+                <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
+                <figcaption>Name Here</figcaption>
+              </figure>
+            </li>
+
+            <li class="organizers-item speakers-item">
+              <figure>
+                <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
+                <figcaption>Name Here</figcaption>
+              </figure>
+            </li>
+
+            <li class="organizers-item speakers-item">
+              <figure>
+                <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
+                <figcaption>Name Here</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </aside>
+      </div>
     </section>
   </main>
 
   <footer class="footer-primary">
-    <p>Google © 2015 ng-conf All Rights Reserved.</p>
+    <div class="content">
+      <p><span>Google</span> © 2015 ng-conf All Rights Reserved.</p>
+    </div>
   </footer>
 
 
 	<!-- SCRIPTS -->
   <script src="dist/js/libs.min.js"></script>
-
-  <script src="src/js/APP.js"></script>
-  <script src="src/js/APP.Status.js"></script>
-  <script src="src/js/APP.Scroll.js"></script>
+  <script src="dist/js/scripts.min.js"></script>
   <script>APP.init()</script>
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
