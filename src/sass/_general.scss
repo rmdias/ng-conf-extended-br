@@ -40,6 +40,14 @@ body {
   text-shadow: none;
 }
 
+.content {
+  width: 960px;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  // background: oldlace;
+}
+
 //
 // Header
 //
@@ -49,17 +57,30 @@ body {
   background-color: #ffffff;
   position: fixed;
   z-index: 5;
+  width: 100%;
+  margin: 0 auto;
 
-  @include row(12);
   @include bsd(4px, 1px, rgba(0,0,0,.2));
-  @include transition(position, .3s, ease, 0s);
+  @include transition(height, .2s, ease, 0s);
+
+  &.js-header-fixed {
+    height: 100px;
+
+    .logo { margin-top: 30px; }
+
+    .buy-ticket { top: -5px; }
+
+    .nav-primary { top: 49px; }
+  }
 }
 
 .logo {
-  @include column(2);
-  @include push(1);
   margin-top: 60px;
+  width: 205px;
   height: 56px;
+  display: inline-block;
+
+  @include transition(margin-top, .2s, ease, 0s);
 
   a {
     text-indent: -9999px;
@@ -72,14 +93,17 @@ body {
 }
 
 .nav-primary {
-  @include column(8);
+  display: inline-block;
   position: relative;
-  top: 117px;
+  top: 99px;
+
+  @include transition(top, .2s, ease, 0s);
 }
 
 .nav-item {
-  @include column(1,6);
+  display: inline-block;
   text-align: center;
+  margin-right: 26px;
   text-transform: uppercase;
 
   &.js-nav-active {
@@ -96,7 +120,7 @@ body {
   font-size: $fs-small;
   color: $link-primary;
   display: block;
-  padding: 8px 0;
+  padding: 8px 10px;
   @include transition(all, .2s, ease-out, 0s);
 
   &:hover {
@@ -121,8 +145,33 @@ body {
   &.buy-ticket {
     background-color: $btn-primary;
     position: relative;
-    top: 75px;
-    left: 53%; // 700px
+    top: 35px;
+    left: 64%;
+
+    @include transition(top, .2s, ease, 0s);
+  }
+}
+
+
+//
+// Main
+//
+
+.main {
+  background-color: $bg-primary;
+  display: block;
+  padding-top: 180px; // height of header
+
+  .section {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    margin: 45px auto;
+
+    &.event {
+      min-height: 515px;
+      background-color: $bg-pattern;
+    }
   }
 }
 
@@ -131,29 +180,16 @@ body {
 // Location
 //
 
-.main {
-  background-color: $bg-primary;
-  @include row(12);
-
-  .section {
-    @include column(12);
-    position: relative;
-
-    &:first-child { top: 220px; }
-  }
-}
-
 .location-item {
-  @include column(4, 12);
-  margin-bottom: 20px;
-  overflow: hidden;
+  width: 300px;
   height: 200px;
-  background-color: $active;
+  display: inline-block;
+  margin: 10px 0 10px 10px;
+  overflow: hidden;
   position: relative;
 
   &.live {
-    @include column(8, 12);
-    margin-bottom: 20px;
+    width: 600px;
     background-color: $btn-primary;
 
     figcaption { background-color: $btn-primary; }
@@ -161,22 +197,27 @@ body {
 
   &:hover {
     @include bsd-multiples(6px 8px 9px rgba(0,0,0,0.2));
-  }
-}
 
-.location-link {
-  &:hover {
     .location-title { bottom: 85px; }
 
-    figcaption { top: 130px; }
+    .location-info {
+      @include translate3d(0, -65px, 0);
+    }
 
     img { @include translate3d(0, -40px, 0); }
+
+    &.live {
+      .location-info { @include translate3d(0, -200px, 0); }
+    }
   }
 }
 
 .location-image {
   img {
     max-width: 100%;
+    min-height: 200px;
+
+    @include translate3d(0, 0, 0);
     @include transition(transform, .2s, ease-out, 0s);
   }
 }
@@ -185,14 +226,14 @@ body {
   background-color: $active;
   font-size: $fs-extra-think;
   color: #ffffff;
-  padding: 20px 25px;
+  padding: 11px 25px;
   position: absolute;
-  top: 200px;
   left: 0;
   width: 100%;
-  line-height: 1.6em;
+  line-height: 1.3em;
 
-  @include transition(top, .2s, linear, 0s);
+  @include translate3d(0, 0, 0);
+  @include transition(transform, .2s, linear, 0s);
   @include bsd-multiples(inset 0 1px 2px rgba(0,0,0,.2));
 }
 
@@ -207,6 +248,11 @@ body {
 
   @include transition(bottom, .2s, linear, 0s);
 }
+
+
+//
+// Event
+//
 
 
 
