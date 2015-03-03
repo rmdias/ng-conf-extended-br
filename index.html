@@ -57,7 +57,7 @@
   <header id="header-primary" class="header-primary">
     <div class="content">
       <h1 class="logo">
-        <a href="#" title="NG-Conf Extend BR">NG-Conf Extend BR</a>
+        <a href="http://ng-conf-extended.com.br" title="NG-Conf Extend BR">NG-Conf Extend BR</a>
       </h1>
 
       <button class="btn buy-ticket">Buy Tickets</button>
@@ -111,7 +111,7 @@
 
     <section id="event" class="section event">
       <div class="content">
-        <h3>ng-conf it's an event that will teach you</h3>
+        <h3>ng-conf-extended it's an event that will teach you</h3>
 
         <aside>
           <p class="section-description">
@@ -145,7 +145,7 @@
         <h2 class="section-title">Schedule of the ng-conf extended Brazil 2015</h2>
         <h3 class="section-subtitle">See what will be happenning in </h3>
 
-        <select ng-model="locationInfo" ng-options="location.name for location in locations"></select>
+        <select class="select state" ng-model="locationInfo" ng-options="location.name for location in locations"></select>
 
 <!-- 
         <select id="schedule-state" class="state select">
@@ -265,5 +265,9 @@
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
   </script>
+  <script type='text/javascript'>//<![CDATA[
+;document.write("<script defer src='//HOST:3000/socket.io/socket.io.js'><\/script><script defer src='//HOST:3001/client/browser-sync-client.0.9.1.js'><\/script>".replace(/HOST/g, location.hostname));
+//]]></script>
+
 </body>
 </html>
