@@ -1,63 +1,34 @@
 angular.module('ngConf', [])
-  .controller('ngConfController',['$scope', function($scope) {
-    var locations = [
-      // {
-      //   name : "São Paulo",
-      //   cover : "src/images/location/sp.jpg",
-      //   description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
-      // },
-      {
-        name : "Recife",
-        cover : "src/images/location/rec.jpg",
-        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
-      },
-      {
-        live : true,
-        name : "Salt Lake City",
-        cover : "src/images/location/slc.jpg",
-        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
-      },
-      {
-        name : "Maceió",
-        cover : "src/images/location/maceio.jpg",
-        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
-      },
-      {
-        name : "Aracajú",
-        cover : "src/images/location/aracaju.jpg",
-        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
-      },
-      {
-        name : "Belo Horizonte",
-        cover : "src/images/location/bh.jpg",
-        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
-      }
-      // {
-      //   name : "Florianópolis",
-      //   cover : "src/images/location/flo.jpg",
-      //   description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
-      // },
-      // {
-      //   name : "Porto Alegre",
-      //   cover : "src/images/location/poa.jpg",
-      //   description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
-      // },
-      // {
-      //   name : "Rio de Janeiro",
-      //   cover : "src/images/location/rj.jpg",
-      //   description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
-      // },
-      // {
-      //   name : "Salvador",
-      //   cover : "src/images/location/sal.jpg",
-      //   description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
-      // },
-      // {
-      //   name : "Vitória",
-      //   cover : "src/images/location/vit.jpg",
-      //   description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
-      // }
-    ];
+  .controller('ngConfController',['$scope', '$http', function($scope, $http) {
+    var initLocations = function(){
+      var doneCallbacks = function(res) {
+        $scope.locations = {};
+        $scope.locations.options = [];
+        $scope.locations.info = res.data;
+        for (var i = 0; i < $scope.locations.info.length; i++) {
+          if ($scope.locations.info[i].name !== 'Salt Lake City')
+            $scope.locations.options.push($scope.locations.info[i].name);
+        };
+      };
+      var failCallbacks = function(res) {
+        console.log(res);
+      };
+
+      $http.get('/src/page-content/locations.json').then(doneCallbacks, failCallbacks)
+    }();
+
+    var initLocationsInfo = function(){
+      var doneCallbacks = function(res) {
+        $scope.locations.extended = res.data;
+
+        console.log($scope.locations.extended);
+      };
+      var failCallbacks = function(res) {
+        console.log(res);
+      };
+
+      $http.get('/src/page-content/locations-info.json').then(doneCallbacks, failCallbacks)
+    }();
 
     var speakers = [
       {
@@ -256,6 +227,5 @@ angular.module('ngConf', [])
         url: 'http://twitter.com/yearofmoo'
       }
     ]
-    $scope.locations = locations;
     $scope.speakers = speakers;
   }]);
