@@ -102,7 +102,7 @@ angular.module('ngConf', [])
       },
       {
         name: 'Dave Smith',
-        avatar:'shttp://www.ng-conf.org/ubmissions/angular-plus-react-equals-speed/profile.jpg',
+        avatar:'http://www.ng-conf.org/submissions/angular-plus-react-equals-speed/profile.jpg',
         url: 'http://twitter.com/djsmith42'
       },
       {
@@ -142,7 +142,7 @@ angular.module('ngConf', [])
       },
       {
         name: 'Dr. Gleb Bahmutov PhD.',
-        avatar: 'submissions/digest-cycle-in-web-worker/profile.jpg',
+        avatar: 'http://www.ng-conf.org/submissions/digest-cycle-in-web-worker/profile.jpg',
         url: 'http://twitter.com/bahmutov'
       },
       {
@@ -196,149 +196,86 @@ angular.module('ngConf', [])
         url: 'http://twitter.com/karaforthewin'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Rachael L Moore',
+        avatar: 'http://www.ng-conf.org/submissions/multi-transclude-shadow-dom/profile2.jpg',
+        url: 'http://twitter.com/morewry'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Michał Gołębiowski',
+        avatar: 'http://www.ng-conf.org/submissions/ng-1.3-meets-ng-2.0/profile.jpg',
+        url: 'http://twitter.com/m_gol'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Kent C. Dodds',
+        avatar: 'http://www.ng-conf.org/submissions/ng-model-options-in-5-minutes/profile.jpg',
+        url: 'http://twitter.com/kentcdodds'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Leonardo Zizzamia',
+        avatar: 'http://www.ng-conf.org/submissions/ng-tasty/profile.jpg',
+        url: 'http://twitter.com/zizzamia'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Shai Reznik',
+        avatar: 'http://www.ng-conf.org/submissions/ng-wat/profile.jpg',
+        url: 'http://twitter.com/shai_reznik'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Kelly Knight',
+        avatar: 'http://www.ng-conf.org/submissions/prototyping-yes/profile.jpg',
+        url: '#'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Dirk Ginader',
+        avatar: 'http://www.ng-conf.org/submissions/prototyping-yes/profile2.jpg',
+        url: 'http://twitter.com/ginader'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Ben Lesh',
+        avatar: 'http://www.ng-conf.org/submissions/reactive-all-the-things/profile.jpg',
+        url: 'http://twitter.com/benlesh'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Martin Gontovnikas',
+        avatar: 'http://www.ng-conf.org/submissions/reactive-all-the-things/profile2.jpg',
+        url: 'http://twitter.com/mgonto'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'John Papa',
+        avatar: 'http://www.ng-conf.org/submissions/styleguides/profile.jpg',
+        url: 'http://twitter.com/john_papa'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Dan Wahlin',
+        avatar: 'http://www.ng-conf.org/submissions/supercharge-angularjs-apps-with-typeScript-and-es6/profile.jpg',
+        url: 'http://twitter.com/DanWahlin'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Andrew Connell',
+        avatar: 'http://www.ng-conf.org/submissions/supercharge-angularjs-apps-with-typeScript-and-es6/profile2.jpg',
+        url: 'http://twitter.com/AndrewConnell'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Jafar Husain',
+        avatar: 'http://www.ng-conf.org/submissions/template-binding-to-the-cloud/profile.jpg',
+        url: 'http://twitter.com/jhusain'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Brian Ford',
+        avatar: 'http://www.ng-conf.org/submissions/the-new-router/profile.jpg',
+        url: 'http://twitter.com/briantford'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Jonathan Turner',
+        avatar: 'http://www.ng-conf.org/submissions/typescript-and-ng-2.0/profile.jpg',
+        url: 'http://twitter.com/jntrnr'
       },
       {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
-      },
-      {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
-      },
-      {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
-      },
-      {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
-      },
-      {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
-      },
-      {
-        name: 'Thomas Burleson',
-        avatar: 'http://www.ng-conf.org/submissions/material-tech/profile.jpg',
-        url: 'http://twitter.com/ThomasBurleson'
+        name: 'Matias Niemela',
+        avatar: 'http://www.ng-conf.org/submissions/whats-new-with-nganimate-in-1.4/profile.jpg',
+        url: 'http://twitter.com/yearofmoo'
       }
     ]
     $scope.locations = locations;
     $scope.speakers = speakers;
   }]);
-          
-          <a class="speaker" href="http://twitter.com/" target="_blank"><img class="speaker-image" src="submissions/"><p></p></a>
-          
-          <a class="speaker" href="http://twitter.com/morewry" target="_blank"><img class="speaker-image" src="submissions/multi-transclude-shadow-dom/profile2.jpg"><p>Rachael L Moore</p></a>
-          
-          <a class="speaker" href="http://twitter.com/m_gol" target="_blank"><img class="speaker-image" src="submissions/ng-1.3-meets-ng-2.0/profile.jpg"><p>Michał Gołębiowski</p></a>
-          
-          <a class="speaker" href="http://twitter.com/kentcdodds" target="_blank"><img class="speaker-image" src="submissions/ng-model-options-in-5-minutes/profile.jpg"><p>Kent C. Dodds</p></a>
-          
-          <a class="speaker" href="http://twitter.com/zizzamia" target="_blank"><img class="speaker-image" src="submissions/ng-tasty/profile.jpg"><p>Leonardo Zizzamia</p></a>
-          
-          <a class="speaker" href="http://twitter.com/shai_reznik" target="_blank"><img class="speaker-image" src="submissions/ng-wat/profile.jpg"><p>Shai Reznik</p></a>
-          
-          <a class="speaker" href="http://twitter.com/" target="_blank"><img class="speaker-image" src="submissions/prototyping-yes/profile.jpg"><p>Kelly Knight</p></a>
-          
-          <a class="speaker" href="http://twitter.com/ginader" target="_blank"><img class="speaker-image" src="submissions/prototyping-yes/profile2.jpg"><p>Dirk Ginader</p></a>
-          
-          <a class="speaker" href="http://twitter.com/benlesh" target="_blank"><img class="speaker-image" src="submissions/reactive-all-the-things/profile.jpg"><p>Ben Lesh</p></a>
-          
-          <a class="speaker" href="http://twitter.com/mgonto" target="_blank"><img class="speaker-image" src="submissions/reactive-all-the-things/profile2.jpg"><p>Martin Gontovnikas</p></a>
-          
-          <a class="speaker" href="http://twitter.com/john_papa" target="_blank"><img class="speaker-image" src="submissions/styleguides/profile.jpg"><p>John Papa</p></a>
-          
-          <a class="speaker" href="http://twitter.com/IgorMinar" target="_blank"><img class="speaker-image" src="submissions/super-power-management/profile.jpg"><p>Igor Minar</p></a>
-          
-          <a class="speaker" href="http://twitter.com/DanWahlin" target="_blank"><img class="speaker-image" src="submissions/supercharge-angularjs-apps-with-typeScript-and-es6/profile.jpg"><p>Dan Wahlin</p></a>
-          
-          <a class="speaker" href="http://twitter.com/AndrewConnell" target="_blank"><img class="speaker-image" src="submissions/supercharge-angularjs-apps-with-typeScript-and-es6/profile2.jpg"><p>Andrew Connell</p></a>
-          
-          <a class="speaker" href="http://twitter.com/jhusain" target="_blank"><img class="speaker-image" src="submissions/template-binding-to-the-cloud/profile.jpg"><p>Jafar Husain</p></a>
-          
-          <a class="speaker" href="http://twitter.com/briantford" target="_blank"><img class="speaker-image" src="submissions/the-new-router/profile.jpg"><p>Brian Ford</p></a>
-          
-          <a class="speaker" href="http://twitter.com/jntrnr" target="_blank"><img class="speaker-image" src="submissions/typescript-and-ng-2.0/profile.jpg"><p>Jonathan Turner</p></a>
-          
-          <a class="speaker" href="http://twitter.com/yearofmoo" target="_blank"><img class="speaker-image" src="submissions/whats-new-with-nganimate-in-1.4/profile.jpg"><p>Matias Niemela</p></a>
-          
-        </div>
