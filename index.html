@@ -1,5 +1,5 @@
 <!doctype html>
-<html xmlns:og="http://ogp.me/ns" lang="en">
+<html xmlns:og="http://ogp.me/ns" lang="en" ng-app="ngConf">
 <head>
   <meta charset="utf-8">
 
@@ -53,13 +53,13 @@
 <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
-<body>
+<body ng-controller="ngConfController">
   <header id="header-primary" class="header-primary">
     <div class="content">
       <h1 class="logo">
         <a href="#" title="NG-Conf Extend BR">NG-Conf Extend BR</a>
       </h1>
-
+      
       <button class="btn buy-ticket">Buy Tickets</button>
 
       <nav id="nav-primary" class="nav-primary">
@@ -408,8 +408,11 @@
 
 
 	<!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
   <script src="dist/js/libs.min.js"></script>
   <script src="dist/js/scripts.min.js"></script>
+  <script src="dist/js/angular/controllers.js"></script>
+
   <script>APP.init()</script>
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
