@@ -79,7 +79,7 @@ body {
 
     .buy-ticket { top: -5px; }
 
-    .nav-primary { top: 71px; }
+    .nav-primary { margin-top: 90px }
   }
 }
 
@@ -103,10 +103,10 @@ body {
 
 .nav-primary {
   display: inline-block;
-  position: relative;
-  top: 99px;
+  float: right;
+  margin-top: 100px;
 
-  @include transition(top, .2s, ease, 0s);
+  @include transition(all, .2s, ease, 0s);
 }
 
 .nav-item {
