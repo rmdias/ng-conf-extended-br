@@ -1,4 +1,5 @@
 angular.module('ngConf', [])
+<<<<<<< HEAD
   .controller('ngConfController',['$scope', '$http', function($scope, $http) {
     var initLocations = function(){
       var doneCallbacks = function(res) {
@@ -29,6 +30,67 @@ angular.module('ngConf', [])
 
       $http.get('/src/page-content/locations-info.json').then(doneCallbacks, failCallbacks)
     }();
+=======
+  .controller('ngConfController',['$scope', function($scope) {
+    var locations = [
+      // {
+      //   name : "São Paulo",
+      //   cover : "src/images/location/sp.jpg",
+      //   description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+      // },
+      {
+        name : "Recife",
+        cover : "src/images/location/rec.jpg",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+      },
+      {
+        live : true,
+        name : "Salt Lake City",
+        cover : "src/images/location/slc.jpg",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+      },
+      {
+        name : "Maceió",
+        cover : "src/images/location/maceio.jpg",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+      },
+      {
+        name : "Aracajú",
+        cover : "src/images/location/aracaju.jpg",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+      },
+      {
+        name : "Belo Horizonte",
+        cover : "src/images/location/bh.jpg",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+      }
+      // {
+      //   name : "Florianópolis",
+      //   cover : "src/images/location/flo.jpg",
+      //   description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+      // },
+      // {
+      //   name : "Porto Alegre",
+      //   cover : "src/images/location/poa.jpg",
+      //   description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+      // },
+      // {
+      //   name : "Rio de Janeiro",
+      //   cover : "src/images/location/rj.jpg",
+      //   description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+      // },
+      // {
+      //   name : "Salvador",
+      //   cover : "src/images/location/sal.jpg",
+      //   description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+      // },
+      // {
+      //   name : "Vitória",
+      //   cover : "src/images/location/vit.jpg",
+      //   description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+      // }
+    ];
+>>>>>>> ab375a811c7890b4aec1488f1e4aa9516cd44a9c
 
     var speakers = [
       {
