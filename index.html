@@ -97,11 +97,10 @@
       <div class="content">
         <ul class="location-list">
           <li class="location-item" ng-repeat="location in locations" ng-class="{'live' : location.live}">
-            <h4 class="location-title">{{ location.name }}</h4>
+            <h4 class="location-title" ng-bind="location.name"></h4>
             <figure class="location-image">
               <img src="{{ location.cover }}" alt="{{ location.name }}">
-              <figcaption class="location-info">
-                {{ location.description }}
+              <figcaption class="location-info" ng-bind="location.description">
               </figcaption>
             </figure>
           </li>
@@ -133,7 +132,7 @@
           <li class="speakers-item" ng-repeat="speaker in speakers">
             <a href="{{ speaker.url }}">
               <img src="{{ speaker.avatar }}" alt="{{ speaker.name }}">
-              <figcaption>{{ speaker.name }}</figcaption>
+              <figcaption ng-bind="speaker.name"></figcaption>
             </a>
           </li>
         </ul>
@@ -265,9 +264,7 @@
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
   </script>
-  <script type='text/javascript'>//<![CDATA[
-;document.write("<script defer src='//HOST:3000/socket.io/socket.io.js'><\/script><script defer src='//HOST:3001/client/browser-sync-client.0.9.1.js'><\/script>".replace(/HOST/g, location.hostname));
-//]]></script>
+
 
 </body>
 </html>
