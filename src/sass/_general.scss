@@ -265,11 +265,7 @@ body {
   font-size: $fs-medium;
   position: absolute;
   left: 30px;
-<<<<<<< HEAD
-  text-shadow: 0 0 1px #000;
-=======
   @include tsd(0, 0, 1px, #000);
->>>>>>> ab375a811c7890b4aec1488f1e4aa9516cd44a9c
 
   @include translate3d(0, 150px, 0);
   @include transition(transform, .2s, linear, 0s);
@@ -282,15 +278,8 @@ body {
 
 .event {
   background-color: $bg-pattern;
-<<<<<<< HEAD
   background: $bg-pattern url(../../src/images/about_bg.png)  center center no-repeat;
   background-size: cover;
-=======
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  @include path('about_bg.png');
->>>>>>> ab375a811c7890b4aec1488f1e4aa9516cd44a9c
 
   h3 {
     font-size: ($fs-large)+1;
@@ -339,13 +328,7 @@ body {
   overflow: hidden;
 
   &:hover{
-<<<<<<< HEAD
-    figcaption{
-      background-color: #D84437;
-    }
-=======
     figcaption{ background-color: $bg-pattern; }
->>>>>>> ab375a811c7890b4aec1488f1e4aa9516cd44a9c
   }
 
   img {
@@ -395,13 +378,7 @@ body {
   height: 210px;
   overflow: hidden;
 
-<<<<<<< HEAD
-  img {
-    max-width: 100%
-  }
-=======
   img { max-width: 100% }
->>>>>>> ab375a811c7890b4aec1488f1e4aa9516cd44a9c
 }
 
 .speaker-info {
@@ -485,15 +462,9 @@ body {
 
 .sponsors-logo {
   a {
-<<<<<<< HEAD
-=======
     text-decoration: none;
     outline: none;
     border: none;
-  }
-
-  figure {
->>>>>>> ab375a811c7890b4aec1488f1e4aa9516cd44a9c
     display: inline-block;
     max-width: 360px;
     max-height: 104px;
