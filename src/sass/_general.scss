@@ -89,7 +89,7 @@ body {
   @include transition(height, .2s, ease, 0s);
 
   &.js-header-fixed {
-    height: 100px;
+    height: 122px;
 
     .logo { margin-top: 30px; }
 
@@ -102,7 +102,7 @@ body {
 .logo {
   margin-top: 60px;
   width: 205px;
-  height: 56px;
+  height: 81px;
   display: inline-block;
 
   @include transition(margin-top, .2s, ease, 0s);
@@ -281,6 +281,7 @@ body {
   font-size: $fs-medium;
   position: absolute;
   left: 30px;
+  text-shadow: 0 0 1px #000;
 
   @include translate3d(0, 150px, 0);
   @include transition(transform, .2s, linear, 0s);
@@ -293,6 +294,8 @@ body {
 
 .event {
   background-color: $bg-pattern;
+  background: $bg-pattern url(../../src/images/about_bg.png)  center center no-repeat;
+  background-size: cover;
 
   h3 {
     font-size: ($fs-large)+1;
@@ -340,6 +343,12 @@ body {
   position: relative;
   overflow: hidden;
 
+  &:hover{
+    figcaption{
+      background-color: #D84437;
+    }
+  }
+
   img {
     max-width: 100%;
   }
@@ -354,6 +363,8 @@ body {
     font-size: ($fs-medium)-.3;
     line-height: ($fs-small)+.2;
     background-color: $bg-secondary;
+    @include transition(all, .2s, ease, 0s);
+
   }
 }
 
@@ -386,8 +397,7 @@ body {
   overflow: hidden;
 
   img {
-    max-width: 100%;
-    min-height: 210px;
+    max-width: 100%
   }
 }
 
