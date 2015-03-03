@@ -33,8 +33,8 @@
   <!-- TWITTER -->
   <meta name="twitter:card" value="summary_large_image">
   <meta name="twitter:card" value="summary">
-  <meta name="twitter:creator" value="@ngconfextendbr">
-  <meta name="twitter:site" value="@ngconfextendbr">
+  <meta name="twitter:creator" value="@cironunes">
+  <meta name="twitter:site" value="@cironunes">
   <meta name="twitter:title" content="NG-Conf Extend BR">
   <meta name="twitter:description" content="The Angular Conf BR.">
   <meta name="twitter:image:src" content="http://ng-conf-extend.com.br">
@@ -76,9 +76,9 @@
             <a href="#speakers" class="nav-link scroll" title="Speakers">Speakers</a>
           </li>
 
-          <li class="nav-item">
+         <!--  <li class="nav-item">
             <a href="#schedule" class="nav-link scroll" title="Schedule">Schedule</a>
-          </li>
+          </li> -->
 
           <li class="nav-item">
             <a href="#about" class="nav-link scroll" title="About">About</a>
@@ -97,12 +97,14 @@
       <div class="content">
         <ul class="location-list">
           <li class="location-item" ng-repeat="location in locations.info" ng-class="{'live' : location.live}">
-            <h4 class="location-title" ng-bind="location.name"></h4>
-            <figure class="location-image">
-              <img src="{{ location.cover }}" alt="{{ location.name }}">
-              <figcaption class="location-info" ng-bind="location.description">
-              </figcaption>
-            </figure>
+            <a href="{{location.url}}" target="_blank">
+              <h4 class="location-title" ng-bind="location.name"></h4>
+              <figure class="location-image">
+                <img src="{{ location.cover }}" alt="{{ location.name }}">
+                <figcaption class="location-info" ng-bind="location.description">
+                </figcaption>
+              </figure>
+            </a>
           </li>
         </ul>
       </div>
@@ -139,12 +141,14 @@
       </div>
     </section>
 
-    <section id="schedule" class="section schedule">
+    <!-- <section id="schedule" class="section schedule">
       <div class="content">
         <h2 class="section-title">Schedule of the ng-conf extended Brazil 2015</h2>
         <h3 class="section-subtitle">See what will be happenning in </h3>
 
-        <select ng-model="locationInfo" ng-init="locationInfo = 'Recife'" ng-options="location for location in locations.options"></select>
+        <select ng-model="locationInfo" ng-init="locationInfo = 'Recife'" ng-options="location for location in locations.options">
+
+        </select>
        
         <article class="speaker" ng-repeat="speaker in locations.extended[locationInfo]">
           <figure class="speaker-image">
@@ -158,7 +162,7 @@
           </div>
         </article>
       </div>
-    </section>
+    </section> -->
 
     <section id="about" class="section about">
       <div class="content">
@@ -166,13 +170,13 @@
         <h3 class="section-subtitle">Our sponsors </h3>
 
         <aside class="sponsors-logo">
-          <a href="#">
+          <a href="https://developers.google.com/">
             <figure class="google">
               <img src="src/images/sponsors/google.png" alt="Google">
             </figure>
           </a>
 
-          <a href="#">
+          <a href="https://www.facebook.com/sagenevtech">
             <figure class="sagenev">
               <img src="src/images/sponsors/sagenev.png" alt="SagenevTech">
             </figure>
@@ -183,37 +187,48 @@
           <h3 class="section-subtitle">Organizers</h3>
           <ul class="organizers-list">
             <li class="organizers-item speakers-item">
-              <a class="organizers-link" href="#">
+              <a class="organizers-link" href="https://github.com/cironunes" target="_blank">
                 <figure>
-                  <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
-                  <figcaption>Name Here</figcaption>
+                  <img src="https://avatars0.githubusercontent.com/u/469908?v=3&s=460" alt="Ciro Nunes">
+                  <img src="src/images/gde.svg" class="gde-tag" alt="GDE">
+                  <figcaption>Ciro Nunes</figcaption>
                 </figure>
               </a>
             </li>
 
             <li class="organizers-item speakers-item">
-              <a class="organizers-link" href="#">
+              <a class="organizers-link" href="https://github.com/cirdes" target="_blank">
                 <figure>
-                  <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
-                  <figcaption>Name Here</figcaption>
+                  <img src="https://avatars2.githubusercontent.com/u/727781?v=3&s=460" alt="Cirdes Henrique">
+                  <figcaption>Cirdes Henrique</figcaption>
                 </figure>
               </a>
             </li>
 
             <li class="organizers-item speakers-item">
-              <a class="organizers-link" href="#">
+              <a class="organizers-link" href="https://github.com/ivosantiago" target="_blank">
                 <figure>
-                  <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
-                  <figcaption>Name Here</figcaption>
+                  <img src="https://avatars2.githubusercontent.com/u/1134149?v=3&s=460" alt="Ivo Santiago">
+                  <figcaption>Ivo Santiago</figcaption>
                 </figure>
               </a>
             </li>
 
             <li class="organizers-item speakers-item">
-              <a class="organizers-link" href="#">
+              <a class="organizers-link" href="https://github.com/rmdias" target="_blank">
                 <figure>
-                  <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
-                  <figcaption>Name Here</figcaption>
+                  <img src="https://avatars2.githubusercontent.com/u/2057971?v=3&s=460" alt="Rodolfo Dias">
+                  <!-- https://avatars3.githubusercontent.com/u/2057971?v=3&u=125b8b93efdbfdcaf78ee2a1150546c94184bf78&s=140 -->
+                  <figcaption>Rodolfo Dias</figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="organizers-item speakers-item">
+              <a class="organizers-link" href="https://github.com/willmendesneto" target="_blank">
+                <figure>
+                  <img src="https://avatars3.githubusercontent.com/u/1252570?v=3&s=460" alt="Wilson Mendes">
+                  <img src="src/images/gde.svg" class="gde-tag" alt="GDE">
+                  <figcaption>Wilson Mendes</figcaption>
                 </figure>
               </a>
             </li>
