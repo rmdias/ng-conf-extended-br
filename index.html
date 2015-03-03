@@ -131,7 +131,7 @@
         <h3 class="section-subtitle">SALT LAKE CITY, UTAH</h3>
         <ul class="speakers-list">
           <li class="speakers-item" ng-repeat="speaker in speakers">
-            <a href="{{ speaker.url }}">
+            <a target="_blank" href="{{ speaker.url }}" title="{{ speaker.name }}">
               <img src="{{ speaker.avatar }}" alt="{{ speaker.name }}">
               <figcaption>{{ speaker.name }}</figcaption>
             </a>
@@ -194,44 +194,56 @@
         <h3 class="section-subtitle">Our sponsors </h3>
 
         <aside class="sponsors-logo">
-          <figure class="google">
-            <img src="src/images/sponsors/google.png" alt="Google">
-          </figure>
+          <a href="#">
+            <figure class="google">
+              <img src="src/images/sponsors/google.png" alt="Google">
+            </figure>
+          </a>
 
-          <figure class="sagenev">
-            <img src="src/images/sponsors/sagenev.png" alt="SagenevTech">
-          </figure>
+          <a href="#">
+            <figure class="sagenev">
+              <img src="src/images/sponsors/sagenev.png" alt="SagenevTech">
+            </figure>
+          </a>
         </aside>
 
         <aside class="organizers">
           <h3 class="section-subtitle">Organizers</h3>
           <ul class="organizers-list">
             <li class="organizers-item speakers-item">
-              <figure>
-                <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
-                <figcaption>Name Here</figcaption>
-              </figure>
+              <a class="organizers-link" href="#">
+                <figure>
+                  <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
+                  <figcaption>Name Here</figcaption>
+                </figure>
+              </a>
             </li>
 
             <li class="organizers-item speakers-item">
-              <figure>
-                <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
-                <figcaption>Name Here</figcaption>
-              </figure>
+              <a class="organizers-link" href="#">
+                <figure>
+                  <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
+                  <figcaption>Name Here</figcaption>
+                </figure>
+              </a>
             </li>
 
             <li class="organizers-item speakers-item">
-              <figure>
-                <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
-                <figcaption>Name Here</figcaption>
-              </figure>
+              <a class="organizers-link" href="#">
+                <figure>
+                  <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
+                  <figcaption>Name Here</figcaption>
+                </figure>
+              </a>
             </li>
 
             <li class="organizers-item speakers-item">
-              <figure>
-                <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
-                <figcaption>Name Here</figcaption>
-              </figure>
+              <a class="organizers-link" href="#">
+                <figure>
+                  <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=organizer" alt="Organizer">
+                  <figcaption>Name Here</figcaption>
+                </figure>
+              </a>
             </li>
           </ul>
         </aside>
