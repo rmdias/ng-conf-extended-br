@@ -1,5 +1,5 @@
 <!doctype html>
-<html xmlns:og="http://ogp.me/ns" lang="en">
+<html xmlns:og="http://ogp.me/ns" lang="en" ng-app="ngConf">
 <head>
   <meta charset="utf-8">
 
@@ -53,7 +53,7 @@
 <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
-<body>
+<body ng-controller="ngConfController">
   <header id="header-primary" class="header-primary">
     <div class="content">
       <h1 class="logo">
@@ -96,112 +96,12 @@
     <section id="location" class="section location">
       <div class="content">
         <ul class="location-list">
-          <li class="location-item">
-            <h4 class="location-title">São Paulo</h4>
+          <li class="location-item" ng-repeat="location in locations" ng-class="{'live' : location.live}">
+            <h4 class="location-title">{{ location.name }}</h4>
             <figure class="location-image">
-              <img src="src/images/location/sp.jpg" alt="São Paulo">
+              <img src="{{ location.cover }}" alt="{{ location.name }}">
               <figcaption class="location-info">
-                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
-              </figcaption>
-            </figure>
-          </li>
-
-          <li class="location-item live">
-            <h4 class="location-title">Live stream from San Francisco</h4>
-            <figure class="location-image">
-              <img src="src/images/location/sf.jpg" alt="San Fracisco">
-              <figcaption class="location-info">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </figcaption>
-            </figure>
-          </li>
-
-          <li class="location-item">
-            <h4 class="location-title">Belo Horizonte</h4>
-            <figure class="location-image">
-              <img src="src/images/location/bh.jpg" alt="Belo Horizonte">
-              <figcaption class="location-info">
-                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
-              </figcaption>
-            </figure>
-          </li>
-
-          <li class="location-item">
-            <h4 class="location-title">Brasília</h4>
-            <figure class="location-image">
-              <img src="src/images/location/br.jpg" alt="Brasília">
-              <figcaption class="location-info">
-                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
-              </figcaption>
-            </figure>
-          </li>
-
-          <li class="location-item">
-            <h4 class="location-title">Curitiba</h4>
-            <figure class="location-image">
-              <img src="src/images/location/cwb.jpg" alt="Curitiba">
-              <figcaption class="location-info">
-                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
-              </figcaption>
-            </figure>
-          </li>
-
-          <li class="location-item">
-            <h4 class="location-title">Florianópolis</h4>
-            <figure class="location-image">
-              <img src="src/images/location/flo.jpg" alt="Florianópolis">
-              <figcaption class="location-info">
-                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
-              </figcaption>
-            </figure>
-          </li>
-
-          <li class="location-item">
-            <h4 class="location-title">Porto Alegre</h4>
-            <figure class="location-image">
-              <img src="src/images/location/poa.jpg" alt="Porto Alegre">
-              <figcaption class="location-info">
-                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
-              </figcaption>
-            </figure>
-          </li>
-
-          <li class="location-item">
-            <h4 class="location-title">Recife</h4>
-            <figure class="location-image">
-              <img src="src/images/location/rec.jpg" alt="Recife">
-              <figcaption class="location-info">
-                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
-              </figcaption>
-            </figure>
-          </li>
-
-          <li class="location-item">
-            <h4 class="location-title">Rio de Janeiro</h4>
-            <figure class="location-image">
-              <img src="src/images/location/rj.jpg" alt="Rio de Janeiro">
-              <figcaption class="location-info">
-                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
-              </figcaption>
-            </figure>
-          </li>
-
-          <li class="location-item">
-            <h4 class="location-title">Salvador</h4>
-            <figure class="location-image">
-              <img src="src/images/location/sal.jpg" alt="Salvador">
-              <figcaption class="location-info">
-                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
-              </figcaption>
-            </figure>
-          </li>
-
-          <li class="location-item">
-            <h4 class="location-title">Vitória</h4>
-            <figure class="location-image">
-              <img src="src/images/location/vit.jpg" alt="Vitória">
-              <figcaption class="location-info">
-                ng-conf 2015 Extended is lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabor.
+                {{ location.description }}
               </figcaption>
             </figure>
           </li>
@@ -228,77 +128,13 @@
     <section id="speakers" class="section speakers">
       <div class="content">
         <h2 class="section-title">The best of the best in Angular™</h2>
-        <h3 class="section-subtitle">Who will be talking in</h3>
-
-        <select id="speakers-state" class="state select">
-          <option value="São Paulo">São Paulo</option>
-          <option value="San Francisco">San Francisco</option>
-          <option value="Belo Horizonte">Belo Horizonte</option>
-          <option value="Brasília">Brasília</option>
-          <option value="Curitiba">Curitiba</option>
-          <option value="Florianópolis">Florianópolis</option>
-          <option value="Porto Alegre">Porto Alegre</option>
-          <option value="Recife">Recife</option>
-          <option value="Rio de Janeiro">Rio de Janeiro</option>
-          <option value="Salvador">Salvador</option>
-          <option value="Vitória">Vitória</option>
-        </select>
-
+        <h3 class="section-subtitle">SALT LAKE CITY, UTAH</h3>
         <ul class="speakers-list">
-          <li class="speakers-item">
-            <figure>
-              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
-              <figcaption>Name Here</figcaption>
-            </figure>
-          </li>
-
-          <li class="speakers-item">
-            <figure>
-              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
-              <figcaption>Name Here</figcaption>
-            </figure>
-          </li>
-
-          <li class="speakers-item">
-            <figure>
-              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
-              <figcaption>Name Here</figcaption>
-            </figure>
-          </li>
-
-          <li class="speakers-item">
-            <figure>
-              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
-              <figcaption>Name Here</figcaption>
-            </figure>
-          </li>
-
-          <li class="speakers-item">
-            <figure>
-              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
-              <figcaption>Name Here</figcaption>
-            </figure>
-          </li>
-
-          <li class="speakers-item">
-            <figure>
-              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
-              <figcaption>Name Here</figcaption>
-            </figure>
-          </li>
-
-          <li class="speakers-item">
-            <figure>
-              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
-              <figcaption>Name Here</figcaption>
-            </figure>
-          </li>
-
-          <li class="speakers-item">
-            <figure>
-              <img src="http://dummyimage.com/220x300/4d494d/686a82.gif&text=speaker" alt="Speaker">
-              <figcaption>Name Here</figcaption>
-            </figure>
+          <li class="speakers-item" ng-repeat="speaker in speakers">
+            <a href="{{ speaker.url }}">
+              <img src="{{ speaker.avatar }}" alt="{{ speaker.name }}">
+              <figcaption>{{ speaker.name }}</figcaption>
+            </a>
           </li>
         </ul>
       </div>
@@ -306,9 +142,12 @@
 
     <section id="schedule" class="section schedule">
       <div class="content">
-        <h2 class="section-title">Schedule of the ng-conf 2015</h2>
+        <h2 class="section-title">Schedule of the ng-conf extended Brazil 2015</h2>
         <h3 class="section-subtitle">See what will be happenning in </h3>
 
+        <select ng-model="locationInfo" ng-options="location.name for location in locations"></select>
+
+<!-- 
         <select id="schedule-state" class="state select">
           <option value="São Paulo">São Paulo</option>
           <option value="San Francisco">San Francisco</option>
@@ -321,7 +160,7 @@
           <option value="Rio de Janeiro">Rio de Janeiro</option>
           <option value="Salvador">Salvador</option>
           <option value="Vitória">Vitória</option>
-        </select>
+        </select> -->
 
         <article class="speaker">
           <figure class="speaker-image">
@@ -408,8 +247,11 @@
 
 
 	<!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
   <script src="dist/js/libs.min.js"></script>
   <script src="dist/js/scripts.min.js"></script>
+  <script src="dist/js/angular/controllers.js"></script>
+
   <script>APP.init()</script>
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
