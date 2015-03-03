@@ -7,7 +7,7 @@ APP.Scroll = {
   setUp: function(){
     this.getClick();
     this.getPosition();
-    // this.activeScroll();
+    this.activeScroll();
   },
 
   getClick: function() {
