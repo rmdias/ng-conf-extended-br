@@ -342,7 +342,6 @@ body {
 
   img {
     max-width: 100%;
-    min-height: 300px;
   }
 
   figcaption {
@@ -353,6 +352,7 @@ body {
     padding: 20px;
     color: #ffffff;
     font-size: ($fs-medium)-.3;
+    line-height: ($fs-small)+.2;
     background-color: $bg-secondary;
   }
 }
@@ -471,6 +471,12 @@ body {
 }
 
 .sponsors-logo {
+  a {
+    text-decoration: none;
+    outline: none;
+    border: none;
+  }
+
   figure {
     display: inline-block;
     max-width: 360px;
