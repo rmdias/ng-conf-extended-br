@@ -45,18 +45,20 @@ APP.Scroll = {
   },
 
   markerSection: function(event) {
-    var that = this;
-    var scrollPos = $(document).scrollTop();
+    var that, scrollPos;
+
+    that = this;
+    scrollPos = $(document).scrollTop();
 
     $('.scroll').each(function() {
-      var currLink = $(this);
-      var refElement = $(currLink.attr('href'));
+      var currentLink = $(this),
+          refElement  = $(currentLink.attr('href'));
 
       if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
         $('.scroll').removeClass('js-nav-active');
-        currLink.addClass('js-nav-active');
+        currentLink.addClass('js-nav-active');
       } else {
-        currLink.removeClass('js-nav-active');
+        currentLink.removeClass('js-nav-active');
       }
     });
   },
