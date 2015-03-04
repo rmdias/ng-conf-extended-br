@@ -112,7 +112,7 @@ body {
 .nav-item {
   display: inline-block;
   text-align: center;
-  margin-right: 26px;
+  margin-left: 26px;
   text-transform: uppercase;
 
   &.js-nav-active {
@@ -173,6 +173,9 @@ body {
   }
 }
 
+.fb-like{
+  margin-right: 10px;
+}
 
 //
 // Main
@@ -186,6 +189,7 @@ body {
   .section {
     width: 100%;
     min-height: 100%;
+    min-width: 960px;
     position: relative;
 
     .content {
