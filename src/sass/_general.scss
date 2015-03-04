@@ -77,8 +77,6 @@ body {
 
     .logo { margin-top: 30px; }
 
-    .buy-ticket { top: -5px; }
-
     .nav-primary { margin-top: 90px }
   }
 }
@@ -106,7 +104,7 @@ body {
   float: right;
   margin-top: 100px;
 
-  @include transition(all, .2s, ease, 0s);
+  @include transition(margin-top, .2s, ease, 0s);
 }
 
 .nav-item {
@@ -199,8 +197,6 @@ body {
 // Location
 //
 
-.location { padding: 40px 0; }
-
 .location-item {
   width: 300px;
   height: 200px;
@@ -221,15 +217,10 @@ body {
 
     .location-title { @include translate3d(0, 95px, 0); }
 
-    .location-info {
-      @include translate3d(0, -65px, 0);
-    }
+    .location-info { @include translate3d(0, -65px, 0); }
 
     img { @include translate3d(0, -40px, 0); }
 
-    &.live {
-      .location-info { @include translate3d(0, -200px, 0); }
-    }
   }
 }
 
