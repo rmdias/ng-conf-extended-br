@@ -13,7 +13,7 @@ angular.module('ngConf', [])
       var failCallbacks = function(res) {
         console.log(res);
       };
-      $http.get('/src/page-content/locations.json').then(doneCallbacks, failCallbacks)
+      $http.get('/page-content/locations.json').then(doneCallbacks, failCallbacks)
     }();
 
     var initLocationsInfo = function(){
@@ -25,7 +25,7 @@ angular.module('ngConf', [])
       var failCallbacks = function(res) {
         console.log(res);
       };
-      $http.get('/src/page-content/locations-info.json').then(doneCallbacks, failCallbacks)
+      $http.get('/page-content/locations-info.json').then(doneCallbacks, failCallbacks)
     }();
 
     var initSpeakers = function(){
@@ -37,6 +37,6 @@ angular.module('ngConf', [])
       var failCallbacks = function(res) {
         console.log(res);
       };
-      $http.get('/src/page-content/usa-speakers.json').then(doneCallbacks, failCallbacks)
-    }();    
+      $http.get('/page-content/usa-speakers.json').then(doneCallbacks, failCallbacks)
+    }();
   }]);
