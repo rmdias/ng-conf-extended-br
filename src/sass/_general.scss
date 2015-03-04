@@ -304,6 +304,7 @@ body {
   height: 300px;
   display: inline-block;
   position: relative;
+  vertical-align: top;
   overflow: hidden;
   width: 80%;
   margin: 10px 0 10px 10%;
@@ -489,6 +490,7 @@ body {
 .gde-tag{
   position: absolute;
   bottom: -4%;
+  left: 0;
   z-index: 2;
   opacity: 0;
   @include transition(all, .2s, ease, 0s);
