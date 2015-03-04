@@ -54,12 +54,10 @@
           "src/js/APP.js"
           ,"src/js/APP.Status.js"
           ,"src/js/APP.Scroll.js"
-          ,"src/js/APP.Components.js"
         ],
 
         "dist/js/libs.min.js": [
           "bower_components/jquery/dist/jquery.min.js"
-          ,"src/js/libs/jquery.ddslick.min.js"
         ]
       }
     }

@@ -96,7 +96,10 @@
     <section id="location" class="section location">
       <div class="content">
         <ul class="location-list">
-          <li class="location-item" ng-repeat="location in locations" ng-class="{'live' : location.live}">
+          <li class="location-item" ng-repeat="location in locations.info" ng-class="{'live' : location.live}">
+
+          <!-- <li class="location-item" ng-repeat="location in locations" ng-class="{'live' : location.live}"> -->
+
             <h4 class="location-title" ng-bind="location.name"></h4>
             <figure class="location-image">
               <img src="{{ location.cover }}" alt="{{ location.name }}">
@@ -143,46 +146,18 @@
       <div class="content">
         <h2 class="section-title">Schedule of the ng-conf extended Brazil 2015</h2>
         <h3 class="section-subtitle">See what will be happenning in </h3>
+        <select ng-model="locationInfo" ng-init="locationInfo = 'Recife'" ng-options="location for location in locations.options"></select>
+       
+        <article class="speaker" ng-repeat="speaker in locations.extended[locationInfo]">
 
-        <select class="select state" ng-model="locationInfo" ng-options="location.name for location in locations"></select>
-
-        <!--
-        <select id="schedule-state" class="state select">
-          <option value="São Paulo">São Paulo</option>
-          <option value="San Francisco">San Francisco</option>
-          <option value="Belo Horizonte">Belo Horizonte</option>
-          <option value="Brasília">Brasília</option>
-          <option value="Curitiba">Curitiba</option>
-          <option value="Florianópolis">Florianópolis</option>
-          <option value="Porto Alegre">Porto Alegre</option>
-          <option value="Recife">Recife</option>
-          <option value="Rio de Janeiro">Rio de Janeiro</option>
-          <option value="Salvador">Salvador</option>
-          <option value="Vitória">Vitória</option>
-        </select>
-         -->
-
-        <article class="speaker">
           <figure class="speaker-image">
-            <img src="http://dummyimage.com/220x210/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
+            <img src="{{ speaker.avatar }}" alt="{{ speaker.name }}">
           </figure>
 
           <div class="speaker-info">
-            <h3>Talk Here</h3>
-            <h4>My name Here</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea impedit alias repellat ipsa? Dignissimos odio repudiandae consectetur, ad, assumenda sed perspiciatis molestiae illo sapiente necessitatibus, deserunt eligendi laudantium dicta facere magnam animi voluptatum? Voluptas numquam vitae culpa excepturi distinctio eius. Laborum nihil cumque quis accusamus rem eveniet perferendis odio voluptates!</p>
-          </div>
-        </article>
-
-        <article class="speaker">
-          <figure class="speaker-image">
-            <img src="http://dummyimage.com/220x210/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image">
-          </figure>
-
-          <div class="speaker-info">
-            <h3>Talk Here</h3>
-            <h4>My name Here</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea impedit alias repellat ipsa? Dignissimos odio repudiandae consectetur, ad, assumenda sed perspiciatis molestiae illo sapiente necessitatibus, deserunt eligendi laudantium dicta facere magnam animi voluptatum? Voluptas numquam vitae culpa excepturi distinctio eius. Laborum nihil cumque quis accusamus rem eveniet perferendis odio voluptates!</p>
+            <h3 ng-bind="speaker.talk.title"></h3>
+            <h4 ng-bind="speaker.name"></h4>
+            <p ng-bind="speaker.talk.description"></p>
           </div>
         </article>
       </div>
@@ -194,16 +169,12 @@
         <h3 class="section-subtitle">Our sponsors </h3>
 
         <aside class="sponsors-logo">
-          <a href="#">
-            <figure class="google">
-              <img src="src/images/sponsors/google.png" alt="Google">
-            </figure>
+          <a href="https://developers.google.com/" class="google">
+            <img src="src/images/sponsors/google.png" alt="Google">
           </a>
 
-          <a href="#">
-            <figure class="sagenev">
-              <img src="src/images/sponsors/sagenev.png" alt="SagenevTech">
-            </figure>
+          <a href="https://www.facebook.com/sagenevtech" class="sagenev">
+            <img src="src/images/sponsors/sagenev.png" alt="SagenevTech">
           </a>
         </aside>
 
@@ -260,6 +231,7 @@
 
 	<!-- SCRIPTS -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="dist/js/libs.min.js"></script>
   <script src="dist/js/scripts.min.js"></script>
   <script src="dist/js/angular/controllers.js"></script>

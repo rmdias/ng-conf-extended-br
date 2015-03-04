@@ -1,0 +1,28 @@
+[
+  {
+    "name" : "Recife",
+    "cover" : "src/images/location/rec.jpg",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+  },
+  {
+    "live" : true,
+    "name" : "Salt Lake City",
+    "cover" : "src/images/location/slc.jpg",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+  },
+  {
+    "name" : "Maceió",
+    "cover" : "src/images/location/maceio.jpg",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+  },
+  {
+    "name" : "Aracajú",
+    "cover" : "src/images/location/aracaju.jpg",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+  },
+  {
+    "name" : "Belo Horizonte",
+    "cover" : "src/images/location/bh.jpg",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+  } 
+]
