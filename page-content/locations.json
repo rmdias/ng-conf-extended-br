@@ -10,19 +10,19 @@
     "name" : "Salt Lake City",
     "cover" : "src/images/location/slc.jpg",
     "url" : "http://www.ng-conf.org",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+    "description" : "Evento principal, com transmissão ao vivo pela ng-conf-extended :)"
   },
   {
     "name" : "Maceió",
     "cover" : "src/images/location/maceio.jpg",
     "url" : "https://plus.google.com/u/0/events/c67osp66hrdo5hj7r9kkeduu1sk",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+    "description" : "ng-conf extended na Freelarmonica para você não perder nenhum segundo da maior conferência sobre AngularJS do mundo.﻿"
   },
   {
     "name" : "Aracajú",
     "cover" : "src/images/location/aracaju.jpg",
     "url" : "https://plus.google.com/events/crbu57gbljcq23fpkuc6p3ae6p8",
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt animi libero voluptatibus eius temporibus, asperiores vitae."
+    "description" : "Av. Des. Maynard, 142 - Suíssa, Aracaju - SE, 49055-210, Brasil ‎"
   },
   {
     "name" : "Belo Horizonte",

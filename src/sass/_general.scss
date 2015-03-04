@@ -265,7 +265,7 @@ body {
   h3 {
     font-size: $fs-large;
     color: #ffffff;
-    width: 260px;
+    width: 53%;
     height: 220px;
     display: inline-block;
     vertical-align: middle;
@@ -573,13 +573,13 @@ body {
 
   .event {
     h3 {
-      margin: 200px 0 0 50px;
+      margin: 60px 0 32px 50px;
       font-size: ($fs-large)+1;
     }
 
     aside {
-      margin-left: 60px;
-      width: 500px;
+      margin: 20px 0 0 60px;
+      width: 35%;
     }
   }
 
