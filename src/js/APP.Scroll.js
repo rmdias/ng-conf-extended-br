@@ -36,9 +36,9 @@ APP.Scroll = {
 
   getPosition: function() {
     $(window).on('scroll', function() {
-      if ($(document).scrollTop() >= 35) {
+      if ($(document).scrollTop() >= 98) {
         $('#header-primary').addClass('js-header-fixed');
-      } else if ($(document).scrollTop() <= 117) {
+      } else if ($(document).scrollTop() <= 127) {
         $('#header-primary').removeClass('js-header-fixed');
       }
     });
