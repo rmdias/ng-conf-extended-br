@@ -36,27 +36,29 @@ APP.Scroll = {
 
   getPosition: function() {
     $(window).on('scroll', function() {
-      if ($(document).scrollTop() >= 35) {
+      if ($(document).scrollTop() >= 98) {
         $('#header-primary').addClass('js-header-fixed');
-      } else if ($(document).scrollTop() <= 117) {
+      } else if ($(document).scrollTop() <= 127) {
         $('#header-primary').removeClass('js-header-fixed');
       }
     });
   },
 
   markerSection: function(event) {
-    var that = this;
-    var scrollPos = $(document).scrollTop();
+    var that, scrollPos;
+
+    that = this;
+    scrollPos = $(document).scrollTop()+115;
 
     $('.scroll').each(function() {
-      var currLink = $(this);
-      var refElement = $(currLink.attr('href'));
+      var currentLink = $(this),
+          refElement  = $(currentLink.attr('href'));
 
       if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-        $('.scroll').removeClass('js-nav-active');
-        currLink.addClass('js-nav-active');
+        $('.nav-link, .scroll, .nav-item').removeClass('js-nav-active');
+        currentLink.addClass('js-nav-active');
       } else {
-        currLink.removeClass('js-nav-active');
+        currentLink.removeClass('js-nav-active');
       }
     });
   },

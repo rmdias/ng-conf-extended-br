@@ -40,22 +40,25 @@ body {
 }
 
 .content {
-  width: 960px;
+  width: 100%;
   position: relative;
   margin: 0 auto;
   display: block;
 }
 
 .section-title {
-  font-size: $fs-large;
-  margin: 0 0 20px 60px;
+  margin: 0 0 0 10px;
+  font-size: $fs-extra-medium;
+  text-align: center;
 }
 
 .section-subtitle {
   font-size: $fs-medium;
-  margin: 0 10px 0 60px;
-  display: inline-block;
+  margin: 20px 0 0 0;
+  text-align: center;
+  display: block;
 }
+
 
 //
 // Header
@@ -71,20 +74,11 @@ body {
 
   @include bsd(4px, 1px, rgba(0,0,0,.2));
   @include transition(height, .2s, ease, 0s);
-
-  &.js-header-fixed {
-    height: 122px;
-
-    .logo { margin-top: 30px; }
-
-    .buy-ticket { top: -5px; }
-
-    .nav-primary { margin-top: 90px }
-  }
 }
 
 .logo {
-  margin-top: 60px;
+  margin-top: 20px;
+  margin-left: 60px;
   width: 205px;
   height: 81px;
   display: inline-block;
@@ -104,9 +98,9 @@ body {
 .nav-primary {
   display: inline-block;
   float: right;
-  margin-top: 100px;
+  margin-top: 46px;
 
-  @include transition(all, .2s, ease, 0s);
+  @include transition(margin-top, .2s, ease, 0s);
 }
 
 .nav-item {
@@ -193,7 +187,7 @@ body {
     position: relative;
 
     .content {
-      padding: 80px 0;
+      padding: 30px 0;
     }
   }
 }
@@ -202,8 +196,6 @@ body {
 //
 // Location
 //
-
-.location { padding: 40px 0; }
 
 .location-item {
   width: 300px;
@@ -214,26 +206,9 @@ body {
   position: relative;
 
   &.live {
-    width: 610px;
     background-color: $btn-primary;
 
     figcaption { background-color: $btn-primary; }
-  }
-
-  &:hover {
-    @include bsd-multiples(6px 8px 9px rgba(0,0,0,0.2));
-
-    .location-title { @include translate3d(0, 95px, 0); }
-
-    .location-info {
-      @include translate3d(0, -65px, 0);
-    }
-
-    img { @include translate3d(0, -40px, 0); }
-
-    &.live {
-      .location-info { @include translate3d(0, -200px, 0); }
-    }
   }
 }
 
@@ -257,7 +232,7 @@ body {
   width: 100%;
   line-height: 1.3em;
 
-  @include translate3d(0, 0, 0);
+  @include translate3d(0, -69px, 0);
   @include transition(transform, .2s, linear, 0s);
   @include bsd-multiples(inset 0 1px 2px rgba(0,0,0,.2));
 }
@@ -271,7 +246,7 @@ body {
   left: 30px;
   @include tsd(0, 0, 1px, #000);
 
-  @include translate3d(0, 150px, 0);
+  @include translate3d(0, 100px, 0);
   @include transition(transform, .2s, linear, 0s);
 }
 
@@ -288,19 +263,19 @@ body {
   @include path('about_bg.png');
 
   h3 {
-    font-size: ($fs-large)+1;
+    font-size: $fs-large;
     color: #ffffff;
     width: 260px;
     height: 220px;
     display: inline-block;
     vertical-align: middle;
-    margin: 200px 0 0 50px;
+    margin: 10px 0 0 50px;
   }
 
   aside {
     display: inline-block;
-    margin-left: 60px;
-    width: 500px;
+    margin-left: 10px;
+    width: 95%;
     vertical-align: top;
   }
 
@@ -326,25 +301,24 @@ body {
 .speakers-list { margin-top: 65px; }
 
 .speakers-item {
-  width: 220px;
   height: 300px;
   display: inline-block;
-  margin: 10px 0 10px 10px;
   position: relative;
   overflow: hidden;
+  width: 80%;
+  margin: 10px 0 10px 10%;
 
   &:hover{
     figcaption{ background-color: $bg-pattern; }
   }
 
-  img {
-    max-width: 100%;
-  }
+  img { max-width: 100%; }
 
   figcaption {
     position: absolute;
     bottom: 0;
     width: 100%;
+    text-align: center;
     height: 90px;
     padding: 20px;
     color: #ffffff;
@@ -352,7 +326,6 @@ body {
     line-height: ($fs-small)+.2;
     background-color: $bg-secondary;
     @include transition(all, .2s, ease, 0s);
-
   }
 }
 
@@ -477,10 +450,10 @@ body {
     display: inline-block;
     max-width: 360px;
     max-height: 104px;
-    margin-right: 60px;
     vertical-align: middle;
+    margin: 0 60px 30px 70px;
 
-    &.google { width: 314px; }
+    &.google { width: auto; }
 
     img {
       max-width: 100%;
@@ -554,10 +527,92 @@ body {
 //
 
 // iPads
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .logo {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+
+  .nav-primary { margin-top: 100px; }
+
+
+  .main {
+    .section {
+      .content { padding: 80px 0; }
+    }
+  }
+
+  .header-primary {
+    &.js-header-fixed {
+      height: 122px;
+
+      .logo { margin-top: 30px; }
+
+      .nav-primary { margin-top: 90px }
+    }
+  }
+
+  .location-item {
+    &.live { width: 610px; }
+
+    &:hover {
+      @include bsd-multiples(6px 8px 9px rgba(0,0,0,0.2));
+
+      .location-title { @include translate3d(0, 95px, 0); }
+
+      .location-info { @include translate3d(0, -65px, 0); }
+
+      img { @include translate3d(0, -40px, 0); }
+    }
+  }
+
+  .location-info { @include translate3d(0, 0, 0); }
+
+  .location-title { @include translate3d(0, 150px, 0); }
+
+  .event {
+    h3 {
+      margin: 200px 0 0 50px;
+      font-size: ($fs-large)+1;
+    }
+
+    aside {
+      margin-left: 60px;
+      width: 500px;
+    }
+  }
+
+  .section-title {
+    font-size: $fs-large;
+    margin: 0 0 20px 60px;
+    text-align: left;
+  }
+
+  .section-subtitle {
+    margin: 0 10px 0 60px;
+    display: inline-block;
+  }
+
+  .speakers-item {
+    width: 220px;
+    margin: 10px 0 10px 10px;
+
+    figcaption { text-align: left; }
+  }
+
+  .sponsors-logo {
+    figure {
+      margin: 0 60px 0 0;
+      &.google { width: 314px; }
+    }
+  }
+
+}
 
 // Desktops
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .content { width: 960px; }
+}
 
 // Large Desktops
 @media (min-width: 1200px) {}
