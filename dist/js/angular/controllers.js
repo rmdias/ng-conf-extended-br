@@ -11,7 +11,7 @@ angular.module('ngConf', [])
         };
       };
       var failCallbacks = function(res) {
-        console.log(res);
+        // console.log(res);
       };
       $http.get('/page-content/locations.json').then(doneCallbacks, failCallbacks)
     }();
@@ -20,10 +20,10 @@ angular.module('ngConf', [])
       var doneCallbacks = function(res) {
         $scope.locations.extended = res.data;
 
-        console.log($scope.locations.extended);
+        // console.log($scope.locations.extended);
       };
       var failCallbacks = function(res) {
-        console.log(res);
+        // console.log(res);
       };
       $http.get('/page-content/locations-info.json').then(doneCallbacks, failCallbacks)
     }();
@@ -32,10 +32,10 @@ angular.module('ngConf', [])
       var doneCallbacks = function(res) {
         $scope.speakers = res.data;
 
-        console.log($scope.locations.extended);
+        // console.log($scope.locations.extended);
       };
       var failCallbacks = function(res) {
-        console.log(res);
+        // console.log(res);
       };
       $http.get('/page-content/usa-speakers.json').then(doneCallbacks, failCallbacks)
     }();
