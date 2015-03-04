@@ -48,12 +48,13 @@ APP.Scroll = {
     var that, scrollPos;
 
     that = this;
-    scrollPos = $(document).scrollTop();
+    scrollPos = $(document).scrollTop()+115;
 
     $('.scroll').each(function() {
       var currentLink = $(this),
           refElement  = $(currentLink.attr('href'));
 
+      // href do elemento menor que o elemento do scrollpos //.
       if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
         $('.scroll').removeClass('js-nav-active');
         currentLink.addClass('js-nav-active');
